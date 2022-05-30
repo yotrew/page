@@ -1,6 +1,9 @@
 ﻿<html>
  <head>
   <title>奇奇的第一個網頁</title>
+  <style type="text/css">
+	td {border:1px dotted blue}
+  </style>
  </head>
  <body background=2.jpg>
    <img src=top.jpg></img><br>
@@ -9,15 +12,21 @@
  <td align=left>
     <a href=https://www.ksvcs.kh.edu.tw/>
          就讀學校</a></td>
- <td align=center bgcolor=blue>自傳</td>
- <td align=center>師長推薦</td>
+ <td align=center bgcolor=green><a href=Resume.html>自傳</a></td>
+ <td align=center><a href=./圖檔/05.jpg>師長推薦</img></td>
  <td align=right>學業成績</td>
 </tr>
 <tr bgcolor=green>
- <td align=left valign=top>得獎紀錄</td>
+ <td align=left valign=top><a href=#book1>經歷</a></td>
  <td align=center valign=top>
-    <img src=01.jpg width=50px></img></td>
- <td align=center valign=top>個人作品</td>
+    <a href=mailto:yotrew@ksvcs.kh.edu.tw>
+      <img src=email.png width=50px></img>
+    </a>
+   <a href=mailto:yotrew@ksvcs.kh.edu.tw>yotrew AT ksvcs.kh.edu.tw</a>
+  </td>
+ <td align=center valign=top>
+    個人作品<a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+  </td>
  <td align=right valign=bottom>讀書計畫</td>
 </tr>
 </table>
@@ -34,9 +43,11 @@ e.佳里敦大學<br>
 <!--  我是奇奇    -->
 
 <hr>
- <h2>2.經歷</h2>
+ <h2>2.經歷<a name=book1></a></h2>
  <h1>二.興趣</h1>
  <h2>1.體育</h2>
  <h2>2.嗜好</h2>
+<iframe frameborder=0 name="f1" src="Resume.html" 
+   width=80% height=300></iframe>
  </body>
 </html>
